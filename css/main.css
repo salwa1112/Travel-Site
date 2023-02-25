@@ -1,0 +1,264 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4rem;
+  background-color: #FFFFFF;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* z-index to make sure the header is always on top otherwise the cards in the pages was overlapping */
+  z-index: 999;
+}
+
+.navheader {
+  padding-right: 4rem;
+}
+.navheader__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #335576;
+  text-decoration: none;
+}
+.navheader__links {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navheader__listitem {
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-right: 1rem;
+}
+.navheader__link {
+  color: #1f2c3a;
+  text-decoration: none;
+}
+.navheader__link:hover {
+  border-bottom: 0.2rem solid #DB7A4E;
+  padding-bottom: 0.5rem;
+}
+
+.active {
+  border-bottom: 0.2rem solid #DB7A4E;
+  padding-bottom: 0.5rem;
+}
+
+.hero {
+  background-color: #FEFAF5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: left;
+}
+.hero__text {
+  word-wrap: break-word;
+  width: 50%;
+  padding-left: 2rem;
+}
+.hero__image--container {
+  align-items: flex-end;
+  padding-right: 2rem;
+}
+.hero__image {
+  width: 32rem;
+}
+.hero__title {
+  color: #335576;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  padding-right: 40px;
+}
+.hero__description {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: #335576;
+}
+.hero__button--container {
+  width: 30%;
+  border: none;
+  text-align: center;
+  border-radius: 2.5rem;
+  background-color: #DB7A4E;
+  font-size: 1.2rem;
+  padding: 0.62rem 1.25rem;
+}
+.hero__button {
+  color: white;
+  text-decoration: none;
+}
+
+.cards {
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 90%;
+  justify-content: center;
+}
+.cards__link, .cards__link--greece, .cards__link--iceland, .cards__link--hawaii {
+  width: 21.875rem;
+  height: 34.375rem;
+  padding: 1rem;
+  margin: 0 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.cards__link__title {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding-right: 0.5rem;
+}
+.cards__link--hawaii {
+  background-image: url("../assets/Images/hawaii.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.cards__link--iceland {
+  background-image: url("../assets/Images/iceland.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.cards__link--greece {
+  background-image: url("../assets/Images/greece.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.cards__content, .cards__content--friday, .cards__content--saturday, .cards__content--sunday {
+  width: 18.75rem;
+  height: 28.125rem;
+  padding: 1rem;
+  margin: 0 1.25rem;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+}
+.cards__content--title {
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 4px solid black;
+}
+.cards__content__details {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  font-size: 1.25rem;
+  padding-top: 0.25rem;
+}
+.cards__content__listitem {
+  padding: 1.25rem;
+  margin: 0.625rem;
+  background-color: #FEFAF5;
+}
+
+.carousel__destinations {
+  padding-top: 1.75rem;
+  padding-bottom: 4rem;
+}
+.carousel__title {
+  display: flex;
+  padding-left: 4rem;
+  align-items: center;
+  font-size: 1.75rem;
+  color: #335576;
+}
+.carousel__content--hawaii {
+  background-image: url("../assets/Images/hawaii.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 0.25rem;
+  padding-bottom: 12rem;
+  padding-left: 5rem;
+}
+.carousel__content--iceland {
+  background-image: url("../assets/Images/iceland.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 0.25rem;
+  padding-bottom: 12rem;
+  padding-left: 5rem;
+}
+.carousel__content--greece {
+  background-image: url("../assets/Images/greece.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 0.25rem;
+  padding-bottom: 12rem;
+  padding-left: 5rem;
+}
+.carousel__content__title {
+  color: #fff;
+  font-size: 6rem;
+}
+
+.footer__container {
+  background-color: #FEFAF5;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer, .footer__schedule__hours, .footer__contact__info, .footer__social__icons {
+  padding-top: 0.5rem;
+  align-items: center;
+}
+.footer__icon--container {
+  display: flex;
+  padding-right: 7rem;
+}
+.footer__social__icons {
+  padding-right: 2rem;
+  display: flex;
+  padding-top: 2.25rem;
+}
+.footer__social__icons--instagram {
+  width: 1.5rem;
+}
+.footer__social__icons--facebook {
+  width: 0.8rem;
+}
+.footer__social__icons--twitter {
+  width: 1.5rem;
+}
+.footer__schedule__hours, .footer__contact__info {
+  display: flex;
+  font-weight: bold;
+  color: #335576;
+}
+.footer__schedule__hours--weekdays, .footer__schedule__hours--saturday, .footer__contact__info--weekdays, .footer__contact__info--saturday {
+  padding-right: 2rem;
+}
+.footer__title {
+  color: #335576;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+.footer__subtitle {
+  color: #DB7A4E;
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+.footer__contact {
+  padding-left: 9.5rem;
+}
+.footer .contact, .footer__social__icons .contact, .footer__schedule__hours .contact, .footer__contact__info .contact {
+  text-decoration: none;
+  color: #335576;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */

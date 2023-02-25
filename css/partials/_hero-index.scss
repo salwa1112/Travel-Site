@@ -1,0 +1,58 @@
+@use '../variables';
+
+.hero {
+    background-color: variables.$hero-background-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: left;
+
+    &__text {
+        // align-items: flex-start;
+        word-wrap: break-word;
+        width: 50%;
+        padding-left: 2rem;
+    }
+
+    &__image--container {
+        align-items: flex-end;
+        padding-right: 2rem;
+    }
+
+    &__image {
+        width: 32rem;
+    }
+
+    &__title {
+        color: variables.$hero-title-color;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        padding-right: 40px;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+        color: variables.$hero-slogan-color;
+    }
+
+    &__button--container {
+        width: 30%;
+        border: none;
+        text-align: center;
+        border-radius: 2.5rem;
+        background-color: variables.$hero-button-background;
+        font-size: 1.2rem;
+        padding: 0.62rem 1.25rem;
+    }
+
+    &__button {
+        color: white;
+        text-decoration: none;
+    }
+}

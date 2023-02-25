@@ -1,0 +1,78 @@
+@use '../variables';
+
+.footer__container {
+    background-color: variables.$footer-background-color;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer {
+    padding-top: 0.5rem;
+    align-items: center;
+    
+
+    &__icon--container {
+        display: flex;  
+        padding-right: 7rem;
+    }
+
+    &__social__icons{
+        padding-right: 2rem;
+        @extend .footer;
+        display: flex;
+        padding-top: 2.25rem;
+        
+        &--instagram {
+            width: 1.5rem;
+        }
+
+        &--facebook {
+            width: 0.8rem;
+        }
+
+        &--twitter {
+            width: 1.5rem;
+        }
+    }
+
+    &__schedule__hours, &__contact__info {
+        @extend .footer;
+        display: flex;
+        font-weight: bold;
+        color: variables.$footer-title-color;
+
+        &--weekdays, &--saturday {
+            padding-right: 2rem;
+        }
+    }
+
+    &__title {
+        color: variables.$footer-title-color;
+        font-weight: bold;
+        font-size: 1.75rem;
+    }
+
+    &__subtitle {
+        color: variables.$footer-subtitle-color;
+        font-weight: bold;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    &__contact {
+        padding-left: 9.5rem;
+    }
+
+    .contact {
+        text-decoration: none;
+        color: variables.$footer-title-color;
+        font-weight: bold;
+    }
+
+
+
+
+    
+}

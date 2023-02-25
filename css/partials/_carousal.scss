@@ -1,0 +1,140 @@
+@use '../variables';
+
+// for box shadows
+@mixin box-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+// for background image
+@mixin bg-image($image) {
+    background-image: url($image);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.cards {
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+    justify-content: center; 
+
+    &__link {
+        width: variables.$card-width;
+        height: variables.$card-height;
+        padding: variables.$card-padding;
+        margin: 0 1.25rem;
+        border-radius: 10px;
+        @include box-shadow;
+        position: relative;
+    
+        &__title {
+            position: absolute;
+            bottom: 0;
+            right: 1rem;
+            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            padding-right: 0.5rem;
+            
+        }
+    
+        &--hawaii {
+            @extend .cards__link;
+            @include bg-image('../assets/Images/hawaii.jpg');
+        }
+    
+        &--iceland{
+            @extend .cards__link;
+            @include bg-image('../assets/Images/iceland.jpg');
+        }
+    
+        &--greece{
+            @extend .cards__link;
+            @include bg-image('../assets/Images/greece.jpg');
+        }
+    }
+
+    &__content {
+        width: variables.$content-card-width;
+        height: variables.$content-card-height;
+        padding: variables.$content-card-padding;
+        margin: 0 1.25rem;
+        border-radius: 10px;
+        position: relative;
+        background-color: #fff;
+
+        &--friday,  &--saturday,  &--sunday{        
+            @extend .cards__content;
+        }
+
+        &--title{
+            font-size: 1.5rem;
+            text-align: center;
+            border-bottom: 4px solid black;
+        }
+
+        &__details {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            font-size: 1.25rem;
+            padding-top: 0.25rem;
+        }
+
+        &__listitem {
+            padding: 1.25rem;
+            margin: 0.625rem;
+            background-color: variables.$content-item-background-color;
+        }
+
+
+    }
+}
+
+.carousel {
+    &__destinations {
+        padding-top: 1.75rem;
+        padding-bottom: 4rem;
+    }
+
+    &__title {
+        display: flex;
+        padding-left: 4rem;
+        align-items: center;
+        font-size: 1.75rem;
+        color: variables.$recommandation-title-color;
+    }
+
+    &__content {
+        &--hawaii {
+            @include bg-image('../assets/Images/hawaii.jpg');
+            padding-top: 0.25rem;
+            padding-bottom: 12rem;
+            padding-left: 5rem;
+        }
+
+        &--iceland {
+            @include bg-image('../assets/Images/iceland.jpg');
+            padding-top: 0.25rem;
+            padding-bottom: 12rem;
+            padding-left: 5rem;
+        }
+
+        &--greece {
+            @include bg-image('../assets/Images/greece.jpg');
+            padding-top: 0.25rem;
+            padding-bottom: 12rem;
+            padding-left: 5rem;
+        }
+
+        &__title {
+            color: #fff;
+            font-size: 6rem;
+        }
+    }
+
+}
+
