@@ -4,9 +4,9 @@ header {
   padding-left: 4rem;
   background-color: #FFFFFF;
   align-items: center;
-  position: fixed;
   top: 0;
   left: 0;
+  position: fixed;
   width: 100%;
   /* z-index to make sure the header is always on top otherwise the cards in the pages was overlapping */
   z-index: 999;
@@ -55,7 +55,7 @@ header {
   align-items: flex-start;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 4rem;
+  padding-top: 10rem;
   padding-bottom: 4rem;
   text-align: left;
 }
@@ -76,7 +76,7 @@ header {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  padding-right: 40px;
+  padding-right: 2.5rem;
 }
 .hero__description {
   font-size: 1.2rem;
@@ -109,8 +109,9 @@ header {
   height: 34.375rem;
   padding: 1rem;
   margin: 0 1.25rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0.3125rem;
+  box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   position: relative;
 }
 .cards__link__title {
@@ -143,14 +144,14 @@ header {
   height: 28.125rem;
   padding: 1rem;
   margin: 0 1.25rem;
-  border-radius: 10px;
+  border-radius: 0.3125rem;
   position: relative;
   background-color: #fff;
 }
 .cards__content--title {
   font-size: 1.5rem;
   text-align: center;
-  border-bottom: 4px solid black;
+  border-bottom: 0.25rem solid black;
 }
 .cards__content__details {
   text-align: center;
@@ -180,7 +181,7 @@ header {
   background-image: url("../assets/Images/hawaii.jpg");
   background-size: cover;
   background-position: center;
-  padding-top: 0.25rem;
+  padding-top: 7.5rem;
   padding-bottom: 12rem;
   padding-left: 5rem;
 }
@@ -188,7 +189,7 @@ header {
   background-image: url("../assets/Images/iceland.jpg");
   background-size: cover;
   background-position: center;
-  padding-top: 0.25rem;
+  padding-top: 7.5rem;
   padding-bottom: 12rem;
   padding-left: 5rem;
 }
@@ -196,13 +197,14 @@ header {
   background-image: url("../assets/Images/greece.jpg");
   background-size: cover;
   background-position: center;
-  padding-top: 0.25rem;
+  padding-top: 7.5rem;
   padding-bottom: 12rem;
   padding-left: 5rem;
 }
 .carousel__content__title {
   color: #fff;
   font-size: 6rem;
+  padding-bottom: 1.875rem;
 }
 
 .footer__container {

@@ -2,7 +2,8 @@
 
 // for box shadows
 @mixin box-shadow {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 // for background image
@@ -25,7 +26,7 @@
         height: variables.$card-height;
         padding: variables.$card-padding;
         margin: 0 1.25rem;
-        border-radius: 10px;
+        border-radius: 0.3125rem;
         @include box-shadow;
         position: relative;
     
@@ -62,7 +63,7 @@
         height: variables.$content-card-height;
         padding: variables.$content-card-padding;
         margin: 0 1.25rem;
-        border-radius: 10px;
+        border-radius: .3125rem;
         position: relative;
         background-color: #fff;
 
@@ -73,7 +74,7 @@
         &--title{
             font-size: 1.5rem;
             text-align: center;
-            border-bottom: 4px solid black;
+            border-bottom: 0.25rem solid black;
         }
 
         &__details {
@@ -94,7 +95,7 @@
     }
 }
 
-.carousel {
+.carousel {    
     &__destinations {
         padding-top: 1.75rem;
         padding-bottom: 4rem;
@@ -109,23 +110,25 @@
     }
 
     &__content {
+
         &--hawaii {
             @include bg-image('../assets/Images/hawaii.jpg');
-            padding-top: 0.25rem;
+            padding-top: 7.5rem;
             padding-bottom: 12rem;
             padding-left: 5rem;
+
         }
 
         &--iceland {
             @include bg-image('../assets/Images/iceland.jpg');
-            padding-top: 0.25rem;
+            padding-top: 7.5rem;
             padding-bottom: 12rem;
             padding-left: 5rem;
         }
 
         &--greece {
             @include bg-image('../assets/Images/greece.jpg');
-            padding-top: 0.25rem;
+            padding-top: 7.5rem;
             padding-bottom: 12rem;
             padding-left: 5rem;
         }
@@ -133,6 +136,7 @@
         &__title {
             color: #fff;
             font-size: 6rem;
+            padding-bottom: 1.875rem;
         }
     }
 

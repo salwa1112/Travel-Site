@@ -6,9 +6,9 @@ header {
     padding-left: 4rem;
     background-color: variables.$header-background-color;
     align-items: center;
-    position: fixed;
     top: 0;
     left: 0;
+    position: fixed;
     width: 100%;
     /* z-index to make sure the header is always on top otherwise the cards in the pages was overlapping */
     z-index: 999;
